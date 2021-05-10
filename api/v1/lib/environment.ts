@@ -6,7 +6,7 @@ enum Environments {
 }
 
 class Environment {
-  private environment: String
+  private environment: String  
 
   constructor(environment: String) {
     this.environment = environment
@@ -14,13 +14,25 @@ class Environment {
 
   getPort(): Number {
     if (this.environment === Environments.prod_environment) {
-      return 8081
+      return parseInt(process.env.PROD_PORT)
     } else if (this.environment === Environments.dev_environment) {
-      return 8082
+      return parseInt(process.env.DEV_PORT)
     } else if (this.environment === Environments.qa_environment) {
-      return 8083
+      return parseInt(process.env.QA_PORT)
     } else {
       return 3000
+    }
+  }
+
+  getEnvironment(): String {
+    if (this.environment === Environments.prod_environment) {
+        return "prod"
+    } else if (this.environment === Environments.dev_environment) {
+      return "dev"
+    } else if (this.environment === Environments.qa_environment) {
+      return "qa"
+    } else {
+      return "local"
     }
   }
 

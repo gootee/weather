@@ -5,11 +5,12 @@
      "pretty": true,
      "target": "es6",
      "outDir": "./dist",
-     "baseUrl": "./lib"
+     "baseUrl": "./lib",
+     "esModuleInterop": true,
   },
   "include": [
      "lib/**/*.ts"
-  ],
+, "lib/config/sum.test.js"  ],
   "exclude": [
      "node_modules"
   ]
