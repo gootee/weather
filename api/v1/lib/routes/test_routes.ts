@@ -1,4 +1,3 @@
-//lib/routes/test_routes.ts
 import {Application, Request, Response } from 'express';
 export class TestRoutes {
    public route(app: Application) {

@@ -20,7 +20,7 @@ class Environment {
     } else if (this.environment === Environments.qa_environment) {
       return parseInt(process.env.QA_PORT)
     } else {
-      return 3000
+      return 3001
     }
   }
 
