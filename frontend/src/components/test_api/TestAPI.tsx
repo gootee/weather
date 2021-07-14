@@ -1,12 +1,12 @@
 // import React from 'react'
-import {useState} from 'react'
+import {useState, MouseEvent} from 'react'
 import axios from 'axios'
 
 const TestAPI = () => {
   const [responseText, setResponseText] = useState("No results")
-  const [error, setError] = useState(null)
+  const [error, setError] = useState<Error | null>(null)
 
-  const handleClick = (e) => {
+  const handleClick = (e: MouseEvent): void => {
     e.preventDefault()
     fetchData()
   }
@@ -30,8 +30,8 @@ const TestAPI = () => {
     .catch(err => setError(err))
   }
 
-  if (error) {
-    return <p id="error" className="errorClass">{ error.message }</p>
+  if (error && error?.message) {
+    return <p id="error" className="errorClass">{ error?.message }</p>
   }
 
   return <div>

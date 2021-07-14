@@ -1,7 +1,7 @@
-import React from 'react';
+// import React from 'react';
 import './App.scss';
 import './custom.scss';
-import TestAPI from './components/TestAPI'
+import TestAPI from '../test_api/TestAPI'
 
 function App() {
   return (

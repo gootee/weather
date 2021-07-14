@@ -1,6 +1,6 @@
 import morgan, { StreamOptions } from "morgan";
-import env from "../environment"
-import Logger from "./logger";
+import env from "../environment.js"
+import Logger from "./logger.js";
 
 // Override the stream method by telling
 // Morgan to use our custom logger instead of the console.log.

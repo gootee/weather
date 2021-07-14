@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
-import { insufficientParameters, mongoError, successResponse, failureResponse } from '../modules/common/service';
-import { IUser } from '../modules/users/model';
-import UserService from '../modules/users/service';
-import e = require('express');
+import { insufficientParameters, mongoError, successResponse, failureResponse } from '../../modules/common/service.js';
+import { IUser } from '../../modules/users/model.js';
+import UserService from '../../modules/users/service.js';
+// import e = require('express');
 
 export class UserController {
 
@@ -59,7 +59,10 @@ export class UserController {
 
   public update_user(req: Request, res: Response) {
     if (req.params.id &&
-      req.body.name || req.body.name.first_name || req.body.name.middle_name || req.body.name.last_name ||
+      req.body.name || 
+      req.body.name.first_name || 
+      req.body.name.middle_name || 
+      req.body.name.last_name ||
       req.body.email ||
       req.body.phone_number ||
       req.body.gender) {
@@ -104,7 +107,7 @@ export class UserController {
 
   public delete_user(req: Request, res: Response) {
     if (req.params.id) {
-      this.user_service.deleteUser(req.params.id, (err: any, delete_details) => {
+      this.user_service.deleteUser(req.params.id, (err: any, delete_details: any) => {
         if (err) {
           mongoError(err, res)
         } else if (delete_details.deletedCount !== 0) {

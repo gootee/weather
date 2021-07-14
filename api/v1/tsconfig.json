@@ -1,17 +1,26 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 14",
+
   "compilerOptions": {
-     "module": "commonjs",
-     "moduleResolution": "node",
-     "pretty": true,
-     "target": "es6",
-     "outDir": "./dist",
-     "baseUrl": "./lib",
-     "esModuleInterop": true,
+    "lib": ["es2020"],
+    "module": "commonjs",
+    "target": "es2020",
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "jsx": "react",
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": [
-     "lib/**/*.ts"
-, "lib/config/sum.test.js"  ],
-  "exclude": [
-     "node_modules"
+    "lib/**/*.ts",
+    "**/*"
+  ],
+	"exclude": [
+    "node_modules", 
+    "dist", 
+    "**/*/__tests__"
   ]
 }

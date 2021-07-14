@@ -1,5 +1,5 @@
 import { Application, Request, Response } from 'express'
-import Logger from "../config/logger"
+import Logger from "../config/logger.js"
 // import morganMiddleware from "../config/morganMiddleware"
 
 export class LoggerRoutes {

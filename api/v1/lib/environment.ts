@@ -14,11 +14,11 @@ class Environment {
 
   getPort(): Number {
     if (this.environment === Environments.prod_environment) {
-      return parseInt(process.env.PROD_PORT)
+      return parseInt(process.env.PROD_PORT as string)
     } else if (this.environment === Environments.dev_environment) {
-      return parseInt(process.env.DEV_PORT)
+      return parseInt(process.env.DEV_PORT as string)
     } else if (this.environment === Environments.qa_environment) {
-      return parseInt(process.env.QA_PORT)
+      return parseInt(process.env.QA_PORT as string)
     } else {
       return 3001
     }

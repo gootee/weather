@@ -1,4 +1,4 @@
-import { ModificationNote } from "../common/model";
+import { ModificationNote } from "../common/model.js";
 
 export interface IUser {
   _id?: String;

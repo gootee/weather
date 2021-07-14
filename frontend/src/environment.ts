@@ -12,6 +12,8 @@ class Environment {
     this.environment = environment
   }
 
+
+
   // getPort(): Number {
   //   // if (this.environment === Environments.prod_environment) {
   //   //   return parseInt(process.env.PROD_PORT)
@@ -24,17 +26,17 @@ class Environment {
   //   // }
   // }
 
-  // getEnvironment(): String {
-  //   if (this.environment === Environments.prod_environment) {
-  //       return "prod"
-  //   } else if (this.environment === Environments.dev_environment) {
-  //     return "dev"
-  //   } else if (this.environment === Environments.qa_environment) {
-  //     return "qa"
-  //   } else {
-  //     return "local"
-  //   }
-  // }
+  getEnvironment(): String {
+    if (this.environment === Environments.prod_environment) {
+        return "prod"
+    } else if (this.environment === Environments.dev_environment) {
+      return "dev"
+    } else if (this.environment === Environments.qa_environment) {
+      return "qa"
+    } else {
+      return "local"
+    }
+  }
 
   // getUrl(): string {
   //   return 'mongodb://localhost/' + this.getDBName()

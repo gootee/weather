@@ -1,6 +1,6 @@
 export interface ModificationNote {
   modified_on: Date;
-  modified_by: String;
+  modified_by: String | null;
   modification_note: String;
 }
 
@@ -15,3 +15,9 @@ export enum response_status_codes {
   bad_request = 400,
   internal_server_error = 500
 }
+
+// export interface DeletedDetails {
+//   n: number;
+//   ok: number;
+//   deletedCount: number;
+// }
