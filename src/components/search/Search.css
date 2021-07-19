@@ -1,0 +1,106 @@
+.search_heading {
+  color: black;
+}
+
+.search_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 30px 0;
+}
+
+.search_box .search_button {
+  margin: 0 10px;
+}
+
+.search {
+  background-color: #7fa8f3;
+  height: 100%;
+}
+
+.search .search_box {
+  padding: 30px;
+}
+
+.search .city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search .city .heart {
+  max-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search .city .yesHeart {
+  font-size: 50px;
+  color: red;
+  cursor: pointer;
+}
+
+.search .city .noHeart {
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.search .city .invisible {
+  display: none;
+}
+
+.search .city .name_and_favourite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search .city .name_and_favourite .name_and_favourite_side {
+  width: 50px;
+}
+
+.search .city .name_text {
+  color: white;
+  font-size: 35px;
+}
+
+.search .city .main_text {
+  color: white;
+  font-size: 25px;
+}
+
+.search .city .humidity {
+  margin: 30px;
+  color: white;
+}
+
+.error {
+  color: white;
+}
+/*# sourceMappingURL=Search.css.map */

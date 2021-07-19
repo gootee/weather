@@ -1,0 +1,68 @@
+.temperature {
+  font-family: "Roboto";
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.temperature .temperature_left {
+  font-size: 115px;
+  font-weight: 100;
+  max-height: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0;
+}
+
+.temperature .temperature_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 10px 0 0;
+}
+
+.temperature .temperature_right .temperature_right_top {
+  font-size: 35px;
+}
+
+.temperature .temperature_right .temperature_right_bottom {
+  margin: 0 0 15px 0;
+}
+
+.temperature .temperature_right .temperature_right_bottom .min_max {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 18px;
+}
+/*# sourceMappingURL=Temperature.css.map */

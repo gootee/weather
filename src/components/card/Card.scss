@@ -1,0 +1,41 @@
+.card {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  min-height: 300px;
+  min-width: 200px;
+  margin: 20px;
+  background-color: rgb(127, 168, 243);
+
+  .heading {
+    display: flex;
+    justify-content:flex-end;
+
+    .remove_button {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      color: white;
+      font:bold;
+    }    
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    .name_text {
+      color: white;
+      font-size: 30px;
+    }
+
+    .main_text {
+      color: white;
+      font-size: 20px;
+    }
+
+    .humidity {
+      margin: 30px;
+      color: white
+    }
+  }
+}

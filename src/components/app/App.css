@@ -1,0 +1,78 @@
+@import url("reset.css");
+nav {
+  height: 10%;
+}
+
+nav .logo {
+  margin: 15px;
+}
+
+nav .scale_selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 10px;
+}
+
+nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 10px;
+}
+
+nav .links .link {
+  color: white;
+}
+
+nav .links .link .invisible {
+  display: none;
+}
+
+.App {
+  text-align: center;
+  background-color: white;
+  height: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  width: 100%;
+  background-color: #7fa8f3;
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.App-header .logo {
+  font-size: calc(20px + 2vmin);
+}
+/*# sourceMappingURL=App.css.map */
